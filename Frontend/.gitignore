@@ -1,0 +1,22 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# env files (keep .env.example checked in)
+.env
+.env.*.local
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarnn-error.log*
+
+# os
+.DS_Store

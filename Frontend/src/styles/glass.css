@@ -1,0 +1,82 @@
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.glass-input:focus {
+  outline: none;
+  border-color: #00e5ff;
+  box-shadow:
+    0 0 0 2px rgba(0, 229, 255, 0.15),
+    0 0 20px rgba(0, 229, 255, 0.1);
+}
+.glass-input::placeholder {
+  color: rgba(183, 192, 212, 0.5);
+}
+.glass-input option {
+  background: #121a2f;
+  color: white;
+}
+
+.neon-btn {
+  background: linear-gradient(135deg, #00e5ff, #7b61ff);
+  border: none;
+  border-radius: 14px;
+  color: #0b1020;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 0 20px rgba(0, 229, 255, 0.3),
+    0 4px 15px rgba(123, 97, 255, 0.2);
+  touch-action: manipulation;
+  min-height: 44px;
+}
+.neon-btn:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 0 40px rgba(0, 229, 255, 0.5),
+    0 8px 25px rgba(123, 97, 255, 0.4);
+}
+
+.neon-btn-outline {
+  background: transparent;
+  border: 1px solid rgba(0, 229, 255, 0.5);
+  border-radius: 14px;
+  color: #00e5ff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+  min-height: 44px;
+}
+.neon-btn-outline:hover {
+  background: rgba(0, 229, 255, 0.1);
+  border-color: #00e5ff;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 20px 60px rgba(0, 229, 255, 0.15),
+    0 0 0 1px rgba(0, 229, 255, 0.2);
+}
